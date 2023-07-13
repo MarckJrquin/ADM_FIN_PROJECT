@@ -3,13 +3,13 @@
 <head>
   <title>Flujo de Caja</title>
   <style>
+
     body {
       font-family: Arial, sans-serif;
       align-content: center;
     }
 
     .container {
-      max-width: 600px;
       margin: 0 auto;
       padding: 20px;
     }
@@ -68,18 +68,18 @@
       <tbody>
         <tr>
           <td>Saldo de Apertura</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>0</td>
+          <td>-1199.45</td>
+          <td>785.45</td>
+          <td>-1710.3</td>
+          <td>-160.1</td>
+          <td>-297.15</td>
+          <td>1415.5</td>
+          <td>3191.3</td>
+          <td>3015.5</td>
+          <td>2332.65</td>
+          <td>3586.1</td>
+          <td>2769.9</td>
         </tr>
         <tr>
           <td>Ingreso de Efectivo</td>
@@ -98,33 +98,33 @@
         </tr>
         <tr>
           <td>Ventas</td>
-          <td>7,760.55</td>
-          <td>8,814.90</td>
-          <td>8,594.25</td>
-          <td>10,510.20</td>
-          <td>8,822.95</td>
-          <td>10,672.65</td>
-          <td>10,735.80</td>
-          <td>8,784.20</td>
-          <td>8,277.15</td>
-          <td>10,213.45</td>
-          <td>8,143.80</td>
-          <td>7,766.65</td>
+          <td>7760.55</td>
+          <td>8814.90</td>
+          <td>8594.25</td>
+          <td>10510.20</td>
+          <td>8822.95</td>
+          <td>10672.65</td>
+          <td>10735.80</td>
+          <td>8784.20</td>
+          <td>8277.15</td>
+          <td>10213.45</td>
+          <td>8143.80</td>
+          <td>7766.65</td>
         </tr>
-        <tr>
+        <tr id="totalIngresosRow">
           <td>Total de Ingresos</td>
-          <td>7,760.55</td>
-          <td>8,814.90</td>
-          <td>8,594.25</td>
-          <td>10,510.20</td>
-          <td>8,822.95</td>
-          <td>10,672.65</td>
-          <td>10,735.80</td>
-          <td>8,784.20</td>
-          <td>8,277.15</td>
-          <td>10,213.45</td>
-          <td>8,143.80</td>
-          <td>7,766.65</td>
+          <td>7760.55</td>
+          <td>8814.90</td>
+          <td>8594.25</td>
+          <td>10510.20</td>
+          <td>8822.95</td>
+          <td>10672.65</td>
+          <td>10735.80</td>
+          <td>8784.20</td>
+          <td>8277.15</td>
+          <td>10213.45</td>
+          <td>8143.80</td>
+          <td>7766.65</td>
         </tr>
         <tr>
           <td>Egreso de Efectivo</td>
@@ -143,18 +143,18 @@
         </tr>
         <tr id="comprasRow">
           <td>Compras</td>
-          <td>4,260.00</td>
-          <td>2,130.00</td>
-          <td>6,390.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
-          <td>4,260.00</td>
+          <td>4260.00</td>
+          <td>2130.00</td>
+          <td>6390.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
+          <td>4260.00</td>
         </tr>
         <tr id="serviciosVariosRow">
           <td>Servicios Varios</td>
@@ -186,7 +186,7 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
+        <tr id="flujoCajaRow">
           <td>Flujo de Caja</td>
           <td></td>
           <td></td>
@@ -203,18 +203,18 @@
         </tr>
         <tr>
           <td>Saldo Cierre</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-1199.45</td>
+          <td>785.45</td>
+          <td>-1710.3</td>
+          <td>-160.1</td>
+          <td>-297.15</td>
+          <td>1415.5</td>
+          <td>3191.3</td>
+          <td>3015.5</td>
+          <td>2332.65</td>
+          <td>3586.1</td>
+          <td>2769.9</td>
+          <td>1576.55</td>
         </tr>
       </tbody>
     </table>
@@ -227,7 +227,7 @@
 
       // Rellenar fila "Servicios Varios"
       for (var i = 1; i < serviciosVariosCells.length; i++) {
-        serviciosVariosCells[i].textContent = "4,700.00";
+        serviciosVariosCells[i].textContent = "4700.00";
       }
 
       // Rellenar fila "Total de Egresos"
@@ -240,13 +240,33 @@
         var comprasValue = parseFloat(comprasCells[i].textContent.replace(/,/g, ''));
         var serviciosVariosValue = parseFloat(serviciosVariosCells[i].textContent.replace(/,/g, ''));
         var totalEgresosValue = comprasValue + serviciosVariosValue;
-        totalEgresosCells[i].textContent = formatCurrency(totalEgresosValue);
+        totalEgresosCells[i].textContent = formatDecimal(totalEgresosValue);
+      }
+
+      // Rellenar fila "Total de Ingresos"
+      var totalIngresosRow = document.getElementById('totalIngresosRow');
+      var totalIngresosCells = totalIngresosRow.getElementsByTagName('td');
+
+      // Rellenar fila "Flujo de Caja"
+      var flujoCajaRow = document.getElementById('flujoCajaRow');
+      var flujoCajaCells = flujoCajaRow.getElementsByTagName('td');
+
+      for (var i = 1; i < flujoCajaCells.length; i++) {
+        var totalIngresosValue = parseFloat(totalIngresosCells[i].textContent.replace(/,/g, ''));
+        var totalEgresosValue = parseFloat(totalEgresosCells[i].textContent.replace(/,/g, ''));
+        var flujoCajaValue = totalIngresosValue - totalEgresosValue;
+        flujoCajaCells[i].textContent = formatCurrency(flujoCajaValue).replace(',', '.');
       }
     });
+
+    function formatDecimal(value) {
+      return value.toFixed(2);
+    }
 
     function formatCurrency(value) {
       return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }
+    
   </script>
 </body>
 </html>

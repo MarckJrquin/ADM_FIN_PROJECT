@@ -492,154 +492,301 @@
                 </div>
             </div>
         </div>
-        <div class="product-status mg-b-30">
+        <div class="widget-program-box mg-tb-30">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="product-status-wrap">
-                            <h4>Products List</h4>
-                            <div class="add-product">
-                                <a href="product-edit.html">Add Product</a>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-box">
+                                    <h2 class="m-b-xs">Mobiliario</h2>
+                                    <p class="font-bold text-success">Calculo de Depreciacion</p>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Valor inicial:</label>
+                                        <input type="number" id="valorInicial">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Tasa de dep.:</label>
+                                        <input type="number" id="tasaDepreciacion">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Vida util:</label>
+                                        <input type="number" id="vidaUtil">
+                                    </div>
+                                    <button class="btn btn-success btn-sm">Calcular</button>
+                                </div>
                             </div>
-                            <table>
-                                <tr>
-                                    <th>N°</th>
-                                    <th>Imagen</th>
-                                    <th>Codigo</th>
-                                    <th>Titulo de Producto</th>
-                                    <th>Costo Unitario</th>
-                                    <th>Precio de venta</th>
-                                    <th>Acciones</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1001</td>
-                                    <td>Ají chombo</td>
-                                    <td>$2.00</td>
-                                    <td>$5.50</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1002</td>
-                                    <td>Picante criollo</td>
-                                    <td>$2.00</td>
-                                    <td>$5.50</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1003</td>
-                                    <td>Culantro y aji chombo</td>
-                                    <td>$2.05</td>
-                                    <td>$5.55</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1004</td>
-                                    <td>Ají criollo</td>
-                                    <td>$1.75</td>
-                                    <td>$5.25</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1005</td>
-                                    <td>Culantro extremo</td>
-                                    <td>$1.75</td>
-                                    <td>$5.25</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1006</td>
-                                    <td>Entomatada criolla</td>
-                                    <td>$2.00</td>
-                                    <td>$5.50</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1007</td>
-                                    <td>Piña acaramelada</td>
-                                    <td>$2.50</td>
-                                    <td>$6.00</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1008</td>
-                                    <td>Explosión de mango</td>
-                                    <td>$2.50</td>
-                                    <td>$6.00</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1009</td>
-                                    <td>Ají y guineo</td>
-                                    <td>$2.50</td>
-                                    <td>$6.00</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>1010</td>
-                                    <td>manzana anaranjada</td>
-                                    <td>$2.25</td>
-                                    <td>$5.75</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="custom-pagination">
-								<ul class="pagination">
-									<li class="page-item"><a class="page-link" href="#">Previous</a></li>
-									<li class="page-item"><a class="page-link" href="#">1</a></li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">Next</a></li>
-								</ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-box">
+                                    <h2 class="m-b-xs">Equipos de oficina</h2>
+                                    <p class="font-bold text-success">Calculo de Depreciacion</p>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Valor inicial:</label>
+                                        <input type="number" id="valorInicial">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Tasa de dep.:</label>
+                                        <input type="number" id="tasaDepreciacion">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Vida util:</label>
+                                        <input type="number" id="vidaUtil">
+                                    </div>
+                                    <button class="btn btn-success btn-sm">Calcular</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-box">
+                                    <h2 class="m-b-xs">Vehículo</h2>
+                                    <p class="font-bold text-success">Calculo de Depreciacion</p>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Valor inicial:</label>
+                                        <input type="number" id="valorInicial">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Tasa de dep.:</label>
+                                        <input type="number" id="tasaDepreciacion">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label class="mr-2">Vida util:</label>
+                                        <input type="number" id="vidaUtil">
+                                    </div>
+                                    <button class="btn btn-success btn-sm">Calcular</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-program-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel hbggreen responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-bg-pro">
+                                    <h3>Mobiliario</h3>
+                                    <small>Activo Fijo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel hbgblue responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-bg-pro">
+                                    <h3>Equipos de Oficina</h3>
+                                    <small>Activo Fijo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel hbgyellow responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-bg-pro">
+                                    <h3>Vehículo</h3>
+                                    <small>Activo Fijo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="program-widget-bc mt-t-30 mg-b-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor Inicial</span></td>
+                                                <td>10000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Tasa de Depreciacion Anual</span></td>
+                                                <td>10%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Depreciación anual </span></td>
+                                                <td>1000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor del mobiliario después de un año</span></td>
+                                                <td>9000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor del mobiliario después de x años</span></td>
+                                                <td>7000.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor Inicial</span></td>
+                                                <td>5000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Tasa de Depreciacion Anual</span></td>
+                                                <td>10%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Depreciación anual </span></td>
+                                                <td>500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor del mobiliario después de un año</span></td>
+                                                <td>4500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor del mobiliario después de x años</span></td>
+                                                <td>3500.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor Inicial</span></td>
+                                                <td>25000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Tasa de Depreciacion Anual</span></td>
+                                                <td>10%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Depreciación anual </span></td>
+                                                <td>2500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor del mobiliario después de un año</span></td>
+                                                <td>22500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Valor del mobiliario después de x años</span></td>
+                                                <td>17500.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-program-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel hbggreen responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-bg-pro">
+                                    <h3>Depreciación anual de</h3>
+                                    <small>Activos Fijos</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel hbgblue responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="text-center content-bg-pro">
+                                    <h3>Depreciación acumulada de</h3>
+                                    <small>Activos Fijos</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="program-widget-bc mt-t-30 mg-b-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Mobiliario</span></td>
+                                                <td>1000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Equipo de Oficina</span></td>
+                                                <td>500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Vehiculo</span></td>
+                                                <td>2500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Total</span></td>
+                                                <td>4000.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hpanel responsive-mg-b-30">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Mobiliario</span></td>
+                                                <td>3000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Equipo de Oficina</span></td>
+                                                <td>1500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Vehiculo</span></td>
+                                                <td>7500.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-success font-bold">Total</span></td>
+                                                <td>12000.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
