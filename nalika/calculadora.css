@@ -206,13 +206,6 @@ dd {
     color: #fff
 }
 
-.results table {
-    min-width: fit-content;
-}
-
-.container{
-    width: 500px;
-}
 .res, .mp, .tasa, .plazo{
     font-size: x-large;
 }
@@ -248,9 +241,6 @@ dd {
     overflow: auto
 }
 
-.results table {
-    min-width: 100%
-}
 
 .results table th {
     white-space: nowrap;
