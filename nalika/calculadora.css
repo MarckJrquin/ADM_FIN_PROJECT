@@ -205,7 +205,9 @@ dd {
     background: #ee9430;
     color: #fff
 }
-
+.block{
+    background-color: #dce1f5;
+}
 .res, .mp, .tasa, .plazo{
     font-size: x-large;
 }
@@ -233,6 +235,9 @@ dd {
 
 .titulo{
     font-family: open sans;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
 }
 .results {
     background: #fff;
