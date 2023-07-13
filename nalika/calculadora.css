@@ -7,6 +7,14 @@
     font-family: open sans,Arial,Helvetica,sans-serif;
     font-weight: 200
 }
+.highlight{
+    background-color: #f1f1f1;
+    font-style:italic;
+    font-weight: bold;
+}
+.accrue-amortization{
+    border-radius: 10px;
+}
 
 a {
     color: #11a0d7;
@@ -197,13 +205,9 @@ dd {
     background: #ee9430;
     color: #fff
 }
-#container{
-    background-color: #11a0d7;
-}
-.btn{
-    color: #17328a;
-    border-radius: 10px;
 
+.container{
+    width: 500px;
 }
 .res, .mp, .tasa, .plazo{
     font-size: x-large;
