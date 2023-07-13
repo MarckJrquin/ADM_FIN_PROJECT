@@ -90,25 +90,9 @@ button,input[type=submit],.btn,a.btn,.grey a.btn,.blue a.btn,.blue-dark a.btn,.g
     font-weight: 200
 }
 
-button.wide,input[type=submit].wide,.btn.wide,a.btn.wide,.grey a.btn.wide,.blue a.btn.wide,.blue-dark a.btn.wide,.gold a.btn.wide {
-    width: 100%
-}
 
-button.blue,button.gold,button.grey,button.blue-dark,input[type=submit].blue,input[type=submit].gold,input[type=submit].grey,input[type=submit].blue-dark,.btn.blue,.btn.gold,.btn.grey,.btn.blue-dark,a.btn.blue,a.btn.gold,a.btn.grey,a.btn.blue-dark,.grey a.btn.blue,.grey a.btn.gold,.grey a.btn.grey,.grey a.btn.blue-dark,.blue a.btn.blue,.blue a.btn.gold,.blue a.btn.grey,.blue a.btn.blue-dark,.blue-dark a.btn.blue,.blue-dark a.btn.gold,.blue-dark a.btn.grey,.blue-dark a.btn.blue-dark,.gold a.btn.blue,.gold a.btn.gold,.gold a.btn.grey,.gold a.btn.blue-dark {
-    color: #fff
-}
 
-button.blue,input[type=submit].blue,.btn.blue,a.btn.blue,.grey a.btn.blue,.blue a.btn.blue,.blue-dark a.btn.blue,.gold a.btn.blue {
-    background: #2db9ee
-}
 
-button.blue-dark,input[type=submit].blue-dark,.btn.blue-dark,a.btn.blue-dark,.grey a.btn.blue-dark,.blue a.btn.blue-dark,.blue-dark a.btn.blue-dark,.gold a.btn.blue-dark {
-    background: #0e7da7
-}
-
-button:hover,input[type=submit]:hover,.btn:hover,a.btn:hover,.grey a.btn:hover,.blue a.btn:hover,.blue-dark a.btn:hover,.gold a.btn:hover {
-    opacity: 1
-}
 
 code {
     padding: 5px;
@@ -212,6 +196,17 @@ dd {
 .gold {
     background: #ee9430;
     color: #fff
+}
+#container{
+    background-color: #11a0d7;
+}
+.btn{
+    color: #17328a;
+    border-radius: 10px;
+
+}
+.res, .mp, .tasa, .plazo{
+    font-size: x-large;
 }
 
 .accrue-payment-amount{
