@@ -206,6 +206,10 @@ dd {
     color: #fff
 }
 
+.results table {
+    min-width: fit-content;
+}
+
 .container{
     width: 500px;
 }
