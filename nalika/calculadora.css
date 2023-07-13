@@ -197,7 +197,14 @@ dd {
     background: #ee9430;
     color: #fff
 }
+#container{
+    background-color: #11a0d7;
+}
+.btn{
+    color: #17328a;
+    border-radius: 10px;
 
+}
 .res, .mp, .tasa, .plazo{
     font-size: x-large;
 }
