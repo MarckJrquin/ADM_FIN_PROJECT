@@ -8,5 +8,15 @@
     max-height: 400px;
     background-color: white;
     margin-left: 2%;
-    float: right;
+    
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+}  
+.wrapper div{
+    background-color: white;
+    padding: 7px;
 }
