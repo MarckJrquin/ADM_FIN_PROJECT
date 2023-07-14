@@ -369,17 +369,17 @@
                                     <p class="font-bold text-success">Calculo de Depreciacion</p>
                                     <div class="d-flex align-items-center">
                                         <label class="mr-2">Valor inicial:</label>
-                                        <input type="number" id="valorInicial">
+                                        <input type="number" id="vi-mobiliario" required>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="mr-2">Tasa de dep.:</label>
-                                        <input type="number" id="tasaDepreciacion">
+                                        <input type="number" id="td-mobiliario" required>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <label class="mr-2">Vida util:</label>
-                                        <input type="number" id="vidaUtil">
+                                        <label class="mr-2">Periodo(años):</label>
+                                        <input type="number" id="vu-mobiliario" required>
                                     </div>
-                                    <button class="btn btn-success btn-sm">Calcular</button>
+                                    <button id="btn-mobiliario" class="btn btn-success btn-sm">Calcular</button>
                                 </div>
                             </div>
                         </div>
@@ -392,17 +392,17 @@
                                     <p class="font-bold text-success">Calculo de Depreciacion</p>
                                     <div class="d-flex align-items-center">
                                         <label class="mr-2">Valor inicial:</label>
-                                        <input type="number" id="valorInicial">
+                                        <input type="number" id="vi-eoficina">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="mr-2">Tasa de dep.:</label>
-                                        <input type="number" id="tasaDepreciacion">
+                                        <input type="number" id="td-eoficina">
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <label class="mr-2">Vida util:</label>
-                                        <input type="number" id="vidaUtil">
+                                        <label class="mr-2">Periodo(años):</label>
+                                        <input type="number" id="vu-eoficina">
                                     </div>
-                                    <button class="btn btn-success btn-sm">Calcular</button>
+                                    <button id="btn-eoficina" class="btn btn-success btn-sm">Calcular</button>
                                 </div>
                             </div>
                         </div>
@@ -415,17 +415,17 @@
                                     <p class="font-bold text-success">Calculo de Depreciacion</p>
                                     <div class="d-flex align-items-center">
                                         <label class="mr-2">Valor inicial:</label>
-                                        <input type="number" id="valorInicial">
+                                        <input type="number" id="vi-vehiculo">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="mr-2">Tasa de dep.:</label>
-                                        <input type="number" id="tasaDepreciacion">
+                                        <input type="number" id="td-vehiculo">
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <label class="mr-2">Vida util:</label>
-                                        <input type="number" id="vidaUtil">
+                                        <label class="mr-2">Periodo(años):</label>
+                                        <input type="number" id="vu-vehiculo">
                                     </div>
-                                    <button class="btn btn-success btn-sm">Calcular</button>
+                                    <button id="btn-vehiculo" class="btn btn-success btn-sm">Calcular</button>
                                 </div>
                             </div>
                         </div>
@@ -480,23 +480,23 @@
                                         <tbody>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor Inicial</span></td>
-                                                <td>10000.00</td>
+                                                <td class="vi-mobiliario-result">10000.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Tasa de Depreciacion Anual</span></td>
-                                                <td>10%</td>
+                                                <td class="td-mobiliario-result">10%</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Depreciación anual </span></td>
-                                                <td>1000.00</td>
+                                                <td class="da-mobiliario-result">1000.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor del mobiliario después de un año</span></td>
-                                                <td>9000.00</td>
+                                                <td class="vda-mobiliario-result">9000.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor del mobiliario después de x años</span></td>
-                                                <td>7000.00</td>
+                                                <td class="vdx-mobiliario-result">7000.00</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -512,23 +512,23 @@
                                         <tbody>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor Inicial</span></td>
-                                                <td>5000.00</td>
+                                                <td class="vi-eoficina-result">5000.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Tasa de Depreciacion Anual</span></td>
-                                                <td>10%</td>
+                                                <td class="td-eoficina-result">10%</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Depreciación anual </span></td>
-                                                <td>500.00</td>
+                                                <td class="da-eoficina-result">500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor del mobiliario después de un año</span></td>
-                                                <td>4500.00</td>
+                                                <td class="vda-eoficina-result">4500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor del mobiliario después de x años</span></td>
-                                                <td>3500.00</td>
+                                                <td class="vdx-eoficina-result">3500.00</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -544,23 +544,23 @@
                                         <tbody>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor Inicial</span></td>
-                                                <td>25000.00</td>
+                                                <td class="vi-vehiculo-result">25000</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Tasa de Depreciacion Anual</span></td>
-                                                <td>10%</td>
+                                                <td class="td-vehiculo-result">10%</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Depreciación anual </span></td>
-                                                <td>2500.00</td>
+                                                <td class="da-vehiculo-result">2500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor del mobiliario después de un año</span></td>
-                                                <td>22500.00</td>
+                                                <td class="vda-vehiculo-result">22500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Valor del mobiliario después de x años</span></td>
-                                                <td>17500.00</td>
+                                                <td class="vdx-vehiculo-result">17500.00</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -608,19 +608,19 @@
                                         <tbody>
                                             <tr>
                                                 <td><span class="text-success font-bold">Mobiliario</span></td>
-                                                <td>1000.00</td>
+                                                <td class="dpa-mobiliario">1000.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Equipo de Oficina</span></td>
-                                                <td>500.00</td>
+                                                <td class="dpa-eoficina">500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Vehiculo</span></td>
-                                                <td>2500.00</td>
+                                                <td class="dpa-vehiculo">2500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Total</span></td>
-                                                <td>4000.00</td>
+                                                <td class="dpa-total">4000.00</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -636,19 +636,19 @@
                                         <tbody>
                                             <tr>
                                                 <td><span class="text-success font-bold">Mobiliario</span></td>
-                                                <td>3000.00</td>
+                                                <td class="dpx-mobiliario">3000.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Equipo de Oficina</span></td>
-                                                <td>1500.00</td>
+                                                <td class="dpx-eoficina">1500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Vehiculo</span></td>
-                                                <td>7500.00</td>
+                                                <td class="dpx-vehiculo">7500.00</td>
                                             </tr>
                                             <tr>
                                                 <td><span class="text-success font-bold">Total</span></td>
-                                                <td>12000.00</td>
+                                                <td class="dpx-total">12000.00</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -723,7 +723,9 @@
     <script src="js/plugins.js"></script>
     <!-- main JS
 		============================================ -->
+    <script src="js/calculosActivosFijosNetos.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
