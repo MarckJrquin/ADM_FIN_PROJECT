@@ -7,6 +7,7 @@
     <title>Salsas Camille</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cards.css">
     <!-- favicon
 		============================================ -->
     <!--link rel="shortcut icon" type="image/x-icon" href="img/favicon-chili.png"-->
@@ -498,83 +499,212 @@
                 </div>
             </div>
         </div>
-        <div class="widgets-programs-area mg-t-15">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="hpanel responsive-mg-b-30">
-                            <div class="panel-body">
-                                <div class="stats-title pull-left">
-                                    <h4>Page Views</h4>
-                                </div>
-                                <div class="stats-icon pull-right">
-                                    <i class="fa fa-desktop" aria-hidden="true"></i>
-                                </div>
-                                <div class="m-t-xl">
-                                    <h1 class="text-success">160k+</h1>
-                                    <small>
-										Lorem Ipsum is simply dummy text of the printing and Lorem <strong>typesetting industry</strong> spa.
-									</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="hpanel responsive-mg-b-30">
-                            <div class="panel-body">
-                                <div class="stats-title pull-left">
-                                    <h4>Active Views</h4>
-                                </div>
-                                <div class="stats-icon pull-right">
-                                    <i class="fa fa-street-view" aria-hidden="true"></i>
-                                </div>
-                                <div class="m-t-xl">
-                                    <h1 class="text-info">462</h1>
-                                    <small>
-												Lorem Ipsum is simply dummy text of the printing and Lorem <strong>typesetting industry</strong> spa.
-											</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="hpanel responsive-mg-b-30">
-                            <div class="panel-body">
-                                <div class="stats-title pull-left">
-                                    <h4>Income</h4>
-                                </div>
-                                <div class="stats-icon pull-right">
-                                    <i class="fa fa-tag" aria-hidden="true"></i>
-                                </div>
-                                <div class="m-t-xl">
-                                    <h1 class="text-warning">$2000</h1>
-                                    <small>
-												Lorem Ipsum is simply dummy text of the printing and Lorem <strong>typesetting industry</strong> spa.
-											</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="hpanel">
-                            <div class="panel-body">
-                                <div class="stats-title pull-left">
-                                    <h4>Messages</h4>
-                                </div>
-                                <div class="stats-icon pull-right">
-                                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                                </div>
-                                <div class="m-t-xl">
-                                    <h1 class="text-danger">680</h1>
-                                    <small>
-												Lorem Ipsum is simply dummy text of the printing and Lorem <strong>typesetting industry</strong> spa.
-											</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="wrapper">
+
+            <div>
+                <form>
+
+                    <p>Activos corrientes: </p>
+                    <input type="number" class="text-right font-variant" id="ac" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p>Pasivos corrientes: </p>
+                    <input type="number" class="text-right font-variant" id="ps" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Liquidez corriente: </p> <input type="number" id="lr" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="liquidez()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
             </div>
+            <div>
+                
+                <form>
+
+                    <p>Activos corrientes: </p>
+                    <input type="number" class="text-right font-variant" id="acs" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Inventario: </p>
+                    <input type="number" class="text-right font-variant" id="iv" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Pasivos corrientes: </p>
+                    <input type="number" class="text-right font-variant" id="pc" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Razón rápida: </p> <input type="number" id="rr" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="razon()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                <form>
+
+                    <p>Bienes vendidos: </p>
+                    <input type="number" class="text-right font-variant" id="bv" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Inventario: </p>
+                    <input type="number" class="text-right font-variant" id="inv" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Rotación de inventario: </p> <input type="number" id="ri" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="rotacion()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                <form>
+
+                    <p>Cuentas por cobrar: </p>
+                    <input type="number" class="text-right font-variant" id="cc" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> ventas anuales: </p>
+                    <input type="number" class="text-right font-variant" id="va" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Periodo promedio de cobro: </p> <input type="number" id="ppc" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="cobro()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                
+                <form>
+
+                    <p>Cuentas por pagar: </p>
+                    <input type="number" class="text-right font-variant" id="cp" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Compras anuales: </p>
+                    <input type="number" class="text-right font-variant" id="ca" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Periodo promedio de pago: </p> <input type="number" id="ppp" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="pagar()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                
+                <form>
+
+                    <p>Ventas: </p>
+                    <input type="number" class="text-right font-variant" id="vts" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Activos totales: </p>
+                    <input type="number" class="text-right font-variant" id="act" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Rotación de ativos totales: </p> <input type="number" id="rat" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="ractivos()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                
+                <form>
+
+                    <p>Total de Pasivos: </p>
+                    <input type="number" class="text-right font-variant" id="tdp" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Total de Activos: </p>
+                    <input type="number" class="text-right font-variant" id="tda" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Nivel de endeudamiento: </p> <input type="number" id="nde" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="endeudar()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                
+                
+                <form>
+
+                    <p>Pasivo corriente: </p>
+                    <input type="number" class="text-right font-variant" id="pccp" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Pasivo total: </p>
+                    <input type="number" class="text-right font-variant" id="ptcp" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Concentración del endeudamiento a corto plazo: </p> <input type="number" id="cecp" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="concentracion()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                
+                <form>
+
+                    <p>Utilidad bruta: </p>
+                    <input type="number" class="text-right font-variant" id="ub" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Ventas: </p>
+                    <input type="number" class="text-right font-variant" id="vents" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Margen de utilidad bruta: </p> <input type="number" id="mdub" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="margenub()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div>
+                
+                
+                <form>
+
+                    <p>Utilidad operativa: </p>
+                    <input type="number" class="text-right font-variant" id="uo" value=""  placeholder="0.00" onchange="setValue(this, 1, 'assets', 'value')">
+                    <p> Ventas: </p>
+                    <input type="number" class="text-right font-variant" id="ventas" value=""  placeholder="0.00" onchange="setValue(this, 2, 'assets', 'value')">
+                    
+                    <p>Margen de utilidad operativa: </p> <input type="number" id="mduo" value=""  placeholder="0.00"  readonly="">
+
+                    <button type="button" id="btnresult" class="print-btn" onclick="margenuo()" value="Calcular">
+              
+                
+                        Calcular 
+                      
+                    
+                  </button>
+                </form>
+            </div>
+            <div></div>
         </div>
         <div class="footer-copyright-area">
             <div class="container-fluid">
@@ -641,6 +771,112 @@
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
+
+    <script>
+        function liquidez(){
+            
+      var ac1 = Number(document.getElementById('ac').value);
+      var pc1 = Number(document.getElementById('ps').value);
+
+      var lrresul = Number((ac1 / pc1).toFixed(2));
+
+      document.getElementById('lr').value = lrresul;
+        }
+
+        function razon(){
+            
+      var acc1 = Number(document.getElementById('acs').value);
+      var inv = Number(document.getElementById('iv').value);
+      var pcc1 = Number(document.getElementById('pc').value);
+
+      var rrresul = Number(((acc1 - inv) / pcc1).toFixed(2));
+
+      document.getElementById('rr').value = rrresul;
+        }
+
+        function rotacion(){
+            
+      var bv1 = Number(document.getElementById('bv').value);
+      var inv1 = Number(document.getElementById('inv').value);
+
+      var riresul = Number((bv1 / inv1).toFixed(2));
+
+      document.getElementById('ri').value = riresul;
+        }
+
+        function cobro(){
+            
+      var cc1 = Number(document.getElementById('cc').value);
+      var va1 = Number(document.getElementById('va').value);
+
+      var pccresul = Number((cc1 / (va1 / 356)).toFixed(2));
+
+      document.getElementById('ppc').value = pccresul;
+        }
+
+        function pagar(){
+            
+      var cp1 = Number(document.getElementById('cp').value);
+      var ca1 = Number(document.getElementById('ca').value);
+
+      var ppcresul = Number((cp1 / (ca1 / 356)).toFixed(2));
+
+      document.getElementById('ppp').value = ppcresul;
+        }
+
+        function ractivos(){
+            
+      var vts1 = Number(document.getElementById('vts').value);
+      var act1 = Number(document.getElementById('act').value);
+
+      var ratresul = Number((vts1 / act1).toFixed(2));
+
+      document.getElementById('rat').value = ratresul;
+        }
+
+        function endeudar(){
+            
+            
+      var tdp1 = Number(document.getElementById('tdp').value);
+      var tda1 = Number(document.getElementById('tda').value);
+
+      var enresul = Number((tdp1 / tda1).toFixed(2));
+
+      document.getElementById('nde').value = enresul;
+        }
+
+        function concetracion(){
+            
+      var pccp1 = Number(document.getElementById('pccp').value);
+      var ptcp1 = Number(document.getElementById('ptcp').value);
+
+      var cecpresul = Number((pccp1 / ptcp1).toFixed(2));
+
+      document.getElementById('cecp').value = cepresul;
+        }
+
+        function margenub(){
+            
+            
+      var utb1 = Number(document.getElementById('ub').value);
+      var vents1 = Number(document.getElementById('vents').value);
+
+      var mdubresul = Number((utb1 / vents1).toFixed(2));
+
+      document.getElementById('mdub').value = mdubresul;
+        }
+        
+        function margenuo(){
+            
+            
+            var uo1 = Number(document.getElementById('uo').value);
+            var ventas1 = Number(document.getElementById('ventas').value);
+      
+            var mduoresul = Number((uo1 / ventas1).toFixed(2));
+      
+            document.getElementById('mduo').value = mduoresul;
+              }
+    </script>
 </body>
 
 </html>
